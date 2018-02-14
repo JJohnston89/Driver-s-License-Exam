@@ -40,10 +40,10 @@ public class mainDriver {
 			}//for			
 		  }//if
 		else
-			System.out.println("Correct answers: " + student1.totalCorrect());
-		    System.out.println("Incorrect answers: " + student1.totalInCorrect());
-		    System.out.println("You failed the exam!");
-		    System.out.println("You missed the following questions:");
+		     System.out.println("Correct answers: " + student1.totalCorrect());
+		     System.out.println("Incorrect answers: " + student1.totalInCorrect());
+		     System.out.println("You failed the exam!");
+		     System.out.println("You missed the following questions:");
 		
 		    for(int i = 0; i < missedQuestions.length; i++){
 			    System.out.print(missedQuestions[i] + " ");			
@@ -61,12 +61,12 @@ public class mainDriver {
 		
 		if (answer != 'A' && answer != 'B' && answer != 'C'  && answer != 'D'){
 			System.out.println("\nERROR: Valid answers are A, B, C, or D.");		    
-		    System.out.print("Re-enter your answer: ");
-		    newAnswer = input.next().charAt(0);
+		        System.out.print("Re-enter your answer: ");
+		        newAnswer = input.next().charAt(0);
 		    
-		    newAnswer = Validation(newAnswer); 
+		        newAnswer = Validation(newAnswer); 
 		    
-		    return newAnswer;
+		        return newAnswer;
 		}//if
 		
 		return answer;
